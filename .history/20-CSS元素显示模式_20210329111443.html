@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS元素显示模式</title>
+    <style>
+        .box {
+            text-align: center;
+            background-color: rgb(72, 199, 104);
+        }
+
+        span {
+            background-color: rgb(231, 43, 43);
+            /* 无效设置 */
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS元素显示模式</h1>
+    <p>HTML元素一般分为块元素和行内元素</p>
+    <h3>1、块元素</h3>
+    <p>常见块元素有 h1~h6 , p , div , ul , ol , li 等 </p>
+    <h4>块级元素的特点：</h4>
+    <ol>
+        <li>比较霸道，独占一行</li>
+        <li>高度、宽度、外边距、内边距都可以控制</li>
+        <li>宽度默认是容器（父级宽度）的100%</li>
+        <li>是一个容器及盒子，里面可以放行内或块级元素</li>
+    </ol>
+    <p>注意：文字类元素内不能使用块级元素，p h1~h6都不能</p>
+    <div class="box">盒子</div>
+
+    <h3>2、行内元素</h3>
+    <h4>行内元素的特点</h4>
+    <ol>
+        <li>相邻行内元素在一行上，一行上可以显示多个</li>
+        <li>高、宽直接设置是无效的</li>
+        <li>默认宽度就是它本身内容的宽度</li>
+        <li>行内元素只能收纳文本或其他行内元素</li>
+    </ol>
+    <span>pink</span>
+    <span>pink</span>
+</body>
+
+</html>

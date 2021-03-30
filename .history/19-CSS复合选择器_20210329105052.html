@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS复合选择器</title>
+    <style>
+        /* 1、后代选择器（重要） */
+        ol li p {
+            color: violet;
+        }
+
+        ol .lili {
+            color: aquamarine;
+        }
+
+        /* 2、子选择器 */
+        /* 对比后代选择器 */
+        #sonsel p {
+            background-color: rgb(146, 168, 86);
+        }
+
+        /* 只选择亲儿子，孙子不选哦 */
+        #sonsel>p {
+            color: brown;
+        }
+
+        /* 3、并集选择器 */
+        #bord div,
+        p,
+        span {
+            color: chocolate;
+        }
+
+        #bord .pig {
+            color: pink;
+        }
+
+        /* 4、伪类选择器 */
+        /* 未访问过的链接 a:link */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* 点击过的 */
+        a:visited {
+            color: rosybrown;
+        }
+
+        /* 鼠标经过 */
+        a:hover {
+            color: royalblue;
+        }
+
+        /* 鼠标按下没有弹起 */
+        a:active {
+            color: seagreen;
+        }
+
+        /* 把获得光标的input表单元素选取出来 */
+        #fd input:focus {
+            background-color: rgb(231, 21, 196);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>1、后代选择器（重要）</h3>
+    <div>
+        <ol>
+            哈哈哈哈哈
+            <li class="lili">我是ol的孩子</li>
+            <li>我是ol的孩子</li>
+            <li>我是ol的孩子
+                <p>我是孙子</p>
+            </li>
+        </ol>
+        <ul>
+            <li>我是ul的孩子</li>
+            <li>我是ul的孩子</li>
+            <li>我是ul的孩子</li>
+
+        </ul>
+    </div>
+    <h3>2、子选择器</h3>
+    <div id="sonsel">
+        <p>我是亲儿子</p>
+        <div>
+            <p>我是孙子</p>
+        </div>
+    </div>
+    <h3>3、并集选择器</h3>
+    <div id="bord">
+        <p>一般情况下，并集选择器喜欢竖着写</p>
+        <div>熊大</div>
+        <p>熊二</p>
+        <span>光头强</span>
+        <ul class="pig">
+            <li>小猪佩奇</li>
+            <li>乔治</li>
+            <li>猪妈妈</li>
+        </ul>
+    </div>
+
+    <h3>4、伪类选择器</h3>
+    <div>
+        <p>主要以下几种</p>
+        <h4>1、链接伪类选择器</h4>
+        <div>
+            <p>为确保生效，请按顺序</p>
+            <a href="#">小猪佩奇</a>
+            <a href="http://www.baidu.com">小猪奇</a>
+        </div>
+        <h4>2、:focus 伪类选择器</h4>
+        <div id="fd">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+        </div>
+    </div>
+</body>
+
+</html>

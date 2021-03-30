@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体属性</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+        h2 {
+            /* 设置字体 */
+            /* 从前向后找 */
+            font-family: "Microsoft Yahei"，Times,serif;
+        }
+        p {
+            /* 字体大小 */
+            font-size: 20px;
+           
+        }
+        .bold {
+             /* 设置字体粗细 */
+             /* font-weight: bold; */
+             /* 实际开发中用数字实现加粗 400等同于 normal ，700等同于 bold */
+             font-weight: 700;
+        }
+        .normal {
+            /* 变细 */
+            /* font-weight: normal; */
+            font-weight: 400;
+        }
+        /* 4、font-style 设置文字样式 */
+        .italic {
+            /* 斜体 */
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS字体属性</h1>
+    <h4>1、font-family 设置字体</h4>
+    <h4>2、font-size 设置字体大小</h4>
+    <h4>3、font-weight 设置字体粗细</h4>
+    <h4>4、font-style 设置文字样式</h4>
+
+    <h2 class="normal">pink的秘密</h2>
+    <h2>pink的秘密</h2>
+    <p>那一抹子漂亮的颜色</p>
+    <p>那一抹子漂亮的颜色</p>
+    <p class="bold">那一抹子漂亮的颜色</p>
+    <p>那一抹子漂亮的颜色</p>
+    <p class="italic">那一抹子漂亮的颜色</p>
+    <p>那一抹子漂亮的颜色</p>
+</body>
+</html>

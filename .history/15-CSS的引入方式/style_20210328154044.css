@@ -1,0 +1,6 @@
+/* CSS文件里只有样式 */
+p {
+    color: red;
+    background-color: rgb(105, 192, 71);
+    line-height: 30px;
+}

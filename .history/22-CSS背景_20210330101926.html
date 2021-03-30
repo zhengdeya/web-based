@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS背景</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            text-align: center;
+            line-height: 200px;
+            font-size: 20px;
+            border: solid;
+            border-width: 2px;
+            border-color: black;
+        }
+
+        .bcolor {
+            /* 设置透明 */
+            /* background-color: transparent; */
+            background-color: aquamarine;
+
+        }
+
+        /* 背景图片，默认情况下是平铺的 */
+        .bimg {
+            /* 设置图片背景，默认情况下为 none ，不要忘记url */
+            background-image: url(imgs/2021-03-29_215615.png);
+        }
+
+        /* 背景图片不平铺 */
+        .bimgnrpt {
+            background-repeat: no-repeat;
+        }
+
+        /* 沿着x 轴平铺 */
+        .bimgxrpt {
+            background-repeat: repeat-x;
+        }
+
+        /* 背景沿y轴平铺 */
+        .bimgyrpt {
+            background-repeat: repeat-y;
+        }
+
+        /* 背景图片位置 */
+        /* 方位名词 跟顺序无关
+        *若只写一个参数，则另一个参数默认居中显示 */
+        .bimgptf {
+            /* background-position: 方位名词; */
+            /* 水平居中 */
+            background-position: center top;
+            /* background-position: top center; 和上面效果等价 */
+
+        }
+
+        .right {
+            /* 默认垂直居中 */
+            background-position: right;
+            /* 水平默认居中 */
+            /* background-position: top; */
+        }
+
+        /* 精确单位 */
+        .posi {
+            /* 从左上角开始 */
+            background-position: 20px 50px;
+            /* 如果只指定一个数值，那该数值为 x 坐标，另一个默认垂直居中 */
+            background-position: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS背景</h1>
+    <div class="box bcolor">背景颜色</div>
+    <div class="box bimg">背景图片</div>
+    <div class="box bimg bimgnrpt">背景不平铺</div>
+    <div class="box bimg bimgxrpt">背景沿x轴平铺</div>
+    <div class="box bimg bimgyrpt">背景沿y轴平铺</div>
+    <div class="box bcolor bimg bimgyrpt">背景图片会压住颜色</div>
+    <h2>背景图片位置</h2>
+    <div class="box bimg bimgnrpt">默认位置</div>
+    <div class="box bimg bimgnrpt bimgptf">方位名词 水平居中</div>
+    <div class="box bimg bimgnrpt right">方位名词 right</div>
+    <div class="box bimg bimgnrpt posi">精确坐标</div>
+</body>
+
+</html>

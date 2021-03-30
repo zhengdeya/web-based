@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS文本属性</title>
+    <style>
+        .Bcolor {
+            background-color: rgb(87, 151, 180);
+        }
+        .color1 {
+            /* 1、设置文本颜色 */
+            /* color: pink;预定义的颜色值 */
+            color: #cc00ff;/*十六进制用的最多*/
+            /* color: rgb(255,0,0);RGB代码 */
+        }
+
+        /* 2、对齐文本 */
+        .Tcenter {
+            /* 居中对齐 */
+            text-align: center;
+        }
+        /* 3、装饰文本 */
+        .line {
+            /* 下划线 */
+            text-decoration: underline;
+            /* 删除线 */
+            /* text-decoration: line-through; */
+            /* 上划线 */
+            /* text-decoration: overline; */
+        }
+        a {
+            /* 取消链接的下划线 */
+            text-decoration: none;
+        }
+
+        /* 4、文本缩进/ */
+        .suojin {
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h4>1、文本颜色</h4>
+    <div class="color1">听说喜欢我的人都发了大财</div>
+    
+    <h4>2、对齐文本</h4>
+    <p>指水平方向对齐，默认左对齐</p>
+    <div>
+        <p class="Bcolor Tcenter">居中对齐</p>
+    </div>
+    
+    <h4>3、装饰文本</h4>
+    <div class="line">粉红色的回忆</div>
+    <br>
+    <a href="">白绿色的清新（链接）</a>
+
+    <h4>4、文本缩进</h4>
+    <p class="suojin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minus sit in repellat, harum cum esse aut quisquam culpa numquam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis dolore mollitia optio perferendis numquam iusto eius laboriosam saepe enim soluta.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ex cumque illum ab adipisci dolorem tempora error qui consequatur voluptate.</p>
+</body>
+</html>

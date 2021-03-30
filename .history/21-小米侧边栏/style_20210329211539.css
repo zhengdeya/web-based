@@ -1,0 +1,13 @@
+.sidebar a {
+    /* 将链接a转换为块级元素 */
+    display: block;
+    /* 设置背景颜色 */
+    background-color: #85949D;
+    /* 字体颜色 */
+    color: #FFFFFF;
+    /* 取消下划线 */
+    text-decoration: none;
+    width: 200px;
+    /* 行间距 */
+    line-height: 50px;
+}

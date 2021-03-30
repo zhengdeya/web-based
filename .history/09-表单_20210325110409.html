@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+
+<body>
+    <!-- form就是表单域 -->
+    <form action="demo.php" method="POST" name="name1">
+        <h4>input 输入</h4>
+        <!-- type属性，text表示文本框 maxlength 表示可以输入的最多输入数 -->
+        用户名：<input type="text" maxlength="6" name="uname" value="请输入姓名">
+        <br><!-- password 表示密码-->
+        密 码：<input type="password" name="pwd">
+        <br>
+        <!-- radio 表示单选按钮 可以实现多选一 name值必须用相同的名字-->
+        <!-- 单选按钮和复选框可以设置 checked 属性，当页面打开默认选中这个选项 -->
+        性 别：男 <input type="radio" name="sex" value="男">
+        女 <input type="radio" checked name="sex" value="女">
+        <br><!-- checkbox 表示复选框 可以实现多选-->
+        爱好：吃饭 <input type="checkbox" name="love" value="吃饭">
+        睡觉 <input type="checkbox" checked name="love" value="睡觉">
+        打豆豆 <input type="checkbox" name="love" value="打豆豆">
+        <br>
+        <!-- 提交表单数据的按钮，提交给后台服务器 -->
+        <input type="submit" value="免费注册">
+        <input type="reset">
+
+        <h4></h4>
+    </form>
+</body>
+
+</html>

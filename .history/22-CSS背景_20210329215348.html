@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS背景</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+        }
+
+        .bcolor {
+            /* 设置透明 */
+            /* background-color: transparent; */
+            background-color: aquamarine;
+
+        }
+
+        .bimg {
+            /* 设置图片背景，默认情况下为 none ，不要忘记url */
+            background-image: url(imgs/211ebki1g1v211ebki1g1v.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box bcolor">背景颜色</div>
+    <div class="box bimg">背景图片</div>
+    <div class="box">背景平铺</div>
+</body>
+
+</html>

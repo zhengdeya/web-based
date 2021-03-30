@@ -1,0 +1,36 @@
+body {
+    /* 设置字体 */
+    font-family: "Microsoft YaHei",微软雅黑,"MicrosoftJhengHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+h1 {
+    /* 居中 */
+    text-align: center;
+    font-size: 2em;
+    line-height: 150%;
+    /* 加粗 */
+    font-weight: bold;
+    
+}
+.zhushi {
+    color: #737377;
+    text-align: center;
+}
+
+a {
+    /* 取消下划线 */
+    text-decoration: none;
+}
+.smallimg {
+    width: 25px;
+    height: 25px;
+}
+p {
+    text-indent: 2em;
+}
+.imgbox {
+    text-align: center;
+}

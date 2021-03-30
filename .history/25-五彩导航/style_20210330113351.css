@@ -1,0 +1,38 @@
+.nav a {
+    /* 设置为行内块/ */
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    /* background-color: pink; */
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.nav .bg1 {
+    background-image: url(imgs/bg1.png);
+    background-repeat: no-repeat;
+
+}
+
+.nav .bg2 {
+    background-image: url(imgs/bg2.png);
+    background-repeat: no-repeat;
+}
+
+.nav .bg3 {
+    background-image: url(imgs/bg3.jpg);
+    background-repeat: no-repeat;
+}
+
+.nav .bg4 {
+    background-image: url(imgs/bg4.png);
+    background-repeat: no-repeat;
+}
+
+.nav .bg5 {
+    background-image: url(imgs/bg5.png);
+    background-repeat: no-repeat;
+}

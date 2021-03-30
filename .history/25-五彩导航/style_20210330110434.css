@@ -1,0 +1,6 @@
+.nav a {
+    /* 设置为行内块/ */
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
