@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+
+        }
+
+        .inlinebox {
+            display: inline-block;
+        }
+
+        .border1 {
+            /* 边框粗细 一般用 px 做单位*/
+            border-width: 10px;
+
+            /* 实线边框 dashed 为虚线 */
+            border-style: solid;
+            /* border-style: dashed; */
+
+            /* 边框颜色 */
+            border-color: aquamarine;
+
+            /* 复合写法，没有顺序 */
+            /* border: 1px solid red; */
+
+            /* 单独制定某条边框 */
+            border-top-color: rgb(0, 162, 255);
+        }
+
+        .border2 {
+            border: 5px solid blueviolet;
+        }
+
+        .padding1 {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>1、边框</h4>
+    <p>border可以设置元素的边框，边框有三部分组成：边框宽度（粗细）、边框样式、边框颜色</p>
+    <div class="box border1">盒子</div>
+    <p>边框会影响盒子的实际大小</p>
+
+    <h4>2、padding内边距</h4>
+    <p>设置边框与内容之间的距离</p>
+    <div class="box border2 padding1 inlinebox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam totam
+        culpa fugiat
+        dolorum
+        quiaique aliquid
+        necessitatibus. Numquam ut
+        unde corrupti doloremque quis omnis, minima saepe pariatur exercitationem!</div>
+    <table class="">
+        <thead>
+            <tr>
+                <td>值的个数</td>
+                <td>表达意思</td>
+            </tr>
+        </thead>
+        <tbody>
+            <th>
+            <td>
+                padding: 5px;
+            </td>
+            <td>
+                一个值，代表上下左右
+            </td>
+            </th>
+            <tr>
+                <td>
+                    padding: 5px;
+                </td>
+                <td>
+                    一个值，代表上下左右
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    padding: 5px;
+                </td>
+                <td>
+                    一个值，代表上下左右
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    padding: 5px;
+                </td>
+                <td>
+                    一个值，代表上下左右
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
