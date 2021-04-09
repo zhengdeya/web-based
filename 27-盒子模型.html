@@ -13,6 +13,33 @@
 
         }
 
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            line-height: 100px;
+            text-align: center;
+
+        }
+
+        .father {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            /* 避免外边距塌陷 */
+            /* border-top: 1px solid transparent; */
+            /* padding-top: 1px; */
+            overflow: hidden;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            margin-top: 50px;
+        }
+
 
 
         .border1 {
@@ -42,6 +69,19 @@
             padding-right: 15px;
             padding-top: 15px;
             padding-bottom: 15px;
+        }
+
+        .margin1 {
+            margin-bottom: 20px;
+        }
+
+        .margin_center {
+            margin: auto;
+            /* 或 */
+            /* margin: 0 auto; */
+            /* 或 */
+            /* margin-left: auto;
+            margin-right: auto; */
         }
 
         table,
@@ -108,6 +148,35 @@
             </tr>
         </tbody>
     </table>
+    <p>如果盒子本身没有指定width/height属性，则此时padding不会撑开盒子大小</p>
+
+    <h4>3、margin外边距</h4>
+    <p>控制盒子和盒子之间的距离</p>
+    <img src="imgs/margin属性.png" alt="">
+    <div class="box2 margin1">1</div>
+    <div class="box2">2</div>
+
+    <p>margin简写方式意义与padding一致</p>
+    <h5>外边距可以让块级盒子水平居中，但必须满足两个条件：</h5>
+    <ol>
+        <li>盒子必须指定宽度width</li>
+        <li>盒子左右外边距都设置为auto</li>
+    </ol>
+    <div class="box2 margin_center"></div>
+
+    <h4>4、外边距合并</h4>
+    <p>使用margin定义块元素的垂直外边距时，可能会出现外边距的合并</p>
+    <h5>① 嵌套块元素垂直外边距的塌陷</h5>
+    <p>对于两个嵌套关系的元素，父元素有上边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值</p>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <strong>解决方案：</strong>
+    <ol>
+        <li>可以为父元素定义上边框</li>
+        <li>可以为父元素定义上内边距</li>
+        <li>可以为父元素添加 overflow:hidden</li>
+    </ol>
 </body>
 
 </html>

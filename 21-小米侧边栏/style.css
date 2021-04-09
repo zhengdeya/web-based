@@ -16,8 +16,10 @@
     height: 50px;
     /* 行间距，让行高等于盒子宽度实现垂直居中 */
     line-height: 50px;
-    /* 首行缩进2个字符 */
-    text-indent: 2em;
+
+    /* 首行缩进2个字符
+    text-indent: 2em; */
+    padding-left: 30px;
 }
 
 .sidebar a:hover {
