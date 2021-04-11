@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.kuaibao {
+    margin: 10px auto;
+    width: 264px;
+    height: 163px;
+    border: 1px solid #ccc;
+}
+
+.kuaibao a {
+    text-decoration: none;
+}
+
+.kuaibao .title {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    /* background-color: rgb(148, 38, 38); */
+    border-bottom: 1px dotted #ccc;
+    padding: 0 15px;
+}
+
+.kuaibao .title h4 {
+    font-weight: normal;
+}

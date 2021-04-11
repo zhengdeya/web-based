@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.kuaibao {
+    margin: 10px auto;
+    width: 264px;
+    height: 163px;
+    border: 1px solid #ccc;
+    font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    color: #666;
+}
+
+.kuaibao a {
+    text-decoration: none;
+    font: 12px/1.5 'Microsoft YaHei', 'Heiti SC', tahoma, arial, 'Hiragino Sans GB', \\5B8B\4F53, sans-serif;
+    color: #666;
+}
+
+.kuaibao .title {
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    /* background-color: rgb(148, 38, 38); */
+    border-bottom: 1px dotted #ccc;
+    padding: 0 15px;
+    font-size: 14px;
+    justify-self: start;
+    text-align: justify;
+}
+
+.kuaibao .title h4 {
+    font-weight: normal;
+    display: inline-block;
+}
