@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子阴影</title>
+    <style>
+        .box1 {
+            width: 500px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 10px;
+            background-color: rgb(5, 252, 128);
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin: 20px;
+        }
+
+        .shadow1 {
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <p>CSS中新增了盒子阴影，我们可以使用box-shadow属性为盒子添加阴影</p>
+    <p>语法：</p>
+    <div class="box1">
+        box-shadow: h-shadow v-shadow blur spred color inset;
+    </div>
+    <img src="imgs/盒子阴影.png" alt="">
+    <div class="box2 shadow1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>
