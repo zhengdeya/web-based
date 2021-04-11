@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角边框</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            background-color: rgb(20, 245, 69);
+            margin: 10px;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .yuanjiao1 {
+            /* 圆角半径10px */
+            border-radius: 10px;
+        }
+
+        .yuanjiao2 {
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="imgs/圆角边框.png" alt="">
+    <div class="box1"></div>
+    <div class="box1 yuanjiao1">10px</div>
+    <div class="box1 yuanjiao2">30px</div>
+</body>
+
+</html>
