@@ -34,20 +34,14 @@
     overflow: hidden;
 }
 
-.product a {
-    text-decoration: none;
-}
-
 .product img {
 
     width: 100%;
-    height: 234px;
 
 }
 
 .product p {
     /* height: 70px; */
-    color: black;
     font-size: 14px;
     padding: 0 28px;
     margin-top: 5px;
@@ -60,15 +54,6 @@
     color: #B2B2B2;
 }
 
-.product .price {
-    margin-top: 10px;
-    padding: 0 28px;
-}
-
 .product .price span {
     color: #FA6509;
-}
-
-.product .price del {
-    color: #ADADAD;
 }

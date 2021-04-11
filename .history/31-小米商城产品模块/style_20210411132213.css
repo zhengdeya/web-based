@@ -27,48 +27,19 @@
     display: inline-block;
     width: 234px;
     height: 339px;
-    background-color: #FAFAFA;
+    background-color: yellow;
     margin: 8px 5px;
     border-top: 2px solid #E76360;
-    text-align: center;
-    overflow: hidden;
-}
-
-.product a {
-    text-decoration: none;
 }
 
 .product img {
 
     width: 100%;
-    height: 234px;
 
 }
 
 .product p {
-    /* height: 70px; */
-    color: black;
+    height: 70px;
     font-size: 14px;
     padding: 0 28px;
-    margin-top: 5px;
-}
-
-.product .appraise {
-    margin-top: 5px;
-    font-size: small;
-    padding: 0 28px;
-    color: #B2B2B2;
-}
-
-.product .price {
-    margin-top: 10px;
-    padding: 0 28px;
-}
-
-.product .price span {
-    color: #FA6509;
-}
-
-.product .price del {
-    color: #ADADAD;
 }

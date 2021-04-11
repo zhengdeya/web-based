@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pdv {
+    background-color: #F5F5F5;
+}
+
+.title1 {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 5px;
+    color: #4A5377;
+
+    /* 取消加粗 */
+    font-weight: 400;
+}
+
+.products {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product {
+    display: inline-block;
+    width: 234px;
+    height: 339px;
+    background-color: yellow;
+    margin: 8px 5px;
+    border-top: 2px solid #E76360;
+}
+
+.product .imgshow {
+
+    width: 233px;
+    height: 233px;
+    background-color: blue;
+}
