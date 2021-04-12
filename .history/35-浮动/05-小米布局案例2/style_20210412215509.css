@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 1240px;
+    height: 628px;
+    background-color: #F5F5F5;
+    margin: 30px auto;
+}
+
+.box .left {
+    width: 234px;
+    height: 614px;
+    background-color: #F5F5F5;
+    float: left;
+}
+
+.box .right {
+    width: 978px;
+    height: 628px;
+    background-color: red;
+    margin-left: 14px;
+    float: left;
+}
+
+.box .right .card {
+    float: left;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
+    margin: 0 0 14px 14px;
+    text-align: center;
+    background-color: yellow;
+}
+
+.box .right .first {
+    margin-left: 0;
+}

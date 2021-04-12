@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    box-shadow: 2px 1px 13px 5px rgba(0, 0, 0, .3);
+}
+
+.box {
+    width: 1240px;
+    height: 628px;
+    background-color: #F5F5F5;
+    margin: 30px auto;
+}
+
+.box .left {
+    width: 234px;
+    height: 614px;
+    background-color: red;
+    float: left;
+}
+
+.box .left img {
+    width: 234px;
+}
+
+.box .right {
+    width: 978px;
+    height: 628px;
+    background-color: #F5F5F5;
+    margin-left: 14px;
+    float: left;
+}
+
+.box .right .card {
+    float: left;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
+    margin: 0 0 14px 14px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.box .right .first {
+    margin-left: 0;
+}
+
+.box .right .card img {
+    width: 160px;
+    height: 160px;
+}

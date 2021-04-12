@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 1240px;
+    height: 628px;
+    background-color: skyblue;
+}

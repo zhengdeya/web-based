@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 去掉列表前的小圆点 */
+li {
+    list-style: none;
+}
+
+.box {
+    width: 1240px;
+    height: 285px;
+    margin: 0 auto;
+    background-color: skyblue;
+}
+
+.box li {
+    width: 296px;
+    height: 285px;
+    background: #fff;
+}

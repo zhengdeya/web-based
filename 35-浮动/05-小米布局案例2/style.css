@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.box {
+    width: 1240px;
+    height: 628px;
+    background-color: #F5F5F5;
+    margin: 30px auto;
+}
+
+.box .left {
+    width: 234px;
+    height: 614px;
+    background-color: red;
+    float: left;
+}
+
+.box .right .card:hover,
+.box .left:hover {
+    box-shadow: 2px 1px 13px 5px rgba(0, 0, 0, .3);
+}
+
+.box .left img {
+    width: 234px;
+    height: 614px;
+}
+
+.box .right {
+    width: 978px;
+    height: 628px;
+    background-color: #F5F5F5;
+    margin-left: 14px;
+    float: left;
+}
+
+.box .right .card {
+    float: left;
+    width: 234px;
+    height: 260px;
+    padding: 20px 0;
+    margin: 0 0 14px 14px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.box .right .first {
+    margin-left: 0;
+}
+
+.box .right .card img {
+    width: 160px;
+    height: 160px;
+}
+
+.box .right .card .title {
+    width: 214px;
+    height: 20.667px;
+    margin: 0 10px 2px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    overflow: hidden;
+}
+
+.box .right .card .info {
+    width: 214px;
+    height: 18px;
+    margin: 0 10px 10px;
+    font-size: 12px;
+    color: #b0b0b0;
+    overflow: hidden;
+}
+
+.box .right .card .price {
+    width: 214px;
+    height: 20.667px;
+    margin: 0 10px 14px;
+    color: #ff6700;
+    overflow: hidden;
+}
