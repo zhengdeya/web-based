@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        /* 清除浮动3 after就是在后面又加了盒子 */
+        .clearfix:after {
+            /* after伪元素必须有content属性  */
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        /* 为了照顾IE浏览器 */
+        .clearfix {
+            /* 兼容IE6 、7专有 */
+            *zoom: 1;
+        }
+
+        /* /* 清除浮动4 */
+        .clearfix2:before,
+        .clearfix2:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix2:after {
+            clear: both;
+        }
+
+        .clearfix2 {
+            *zoom: 1;
+        }
+
+        .fatherbox {
+            border: 3px solid blue;
+            margin: 10px auto;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 120px;
+            background-color: red;
+        }
+
+        .box3 {
+            width: 230px;
+            height: 140px;
+            background-color: greenyellow;
+        }
+
+        .fudong {
+            float: left;
+        }
+
+        /* 清除浮动1 */
+        .clear {
+            clear: both;
+        }
+
+        /* 清除浮动2 */
+        .overflow {
+            overflow: hidden;
+            /* overflow: auto; */
+            /* overflow: scroll; */
+            /* 但无法显示溢出的部分 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info fatherbox">
+        <img src="../imgs/清除浮动.png" alt="">
+        <p style="color: red;">清除浮动的策略是：闭合浮动</p>
+        <h4>清除浮动方法</h4>
+        <ol>
+            <li>额外标签法也称为隔墙法，是W3C推荐的做法。</li>
+            <li style="color: red;">父级添加overflow属性</li>
+            <li style="color: red;">父级添加after伪元素</li>
+            <li style="color: red;">父级添加双伪元素</li>
+        </ol>
+    </div>
+
+    <h4>方法1 隔墙法</h4>
+    <div class="fatherbox">
+        <div class="box1 fudong">浮动</div>
+        <div class="box2 fudong">浮动</div>
+        <div class="box3 fudong">浮动</div>
+        <!-- 额外标签用来清除浮动 但要求必须是块级元素，不能是行内元素-->
+        <div class="clear"></div>
+        <!-- <div style="clear: both;"></div> -->
+    </div>
+
+    <h4>方法2 父级添加overflow</h4>
+    <div class="fatherbox overflow">
+        <div class="box1 fudong">浮动</div>
+        <div class="box2 fudong">浮动</div>
+        <div class="box3 fudong">浮动</div>
+
+    </div>
+    <h4>方法3 父级添加after伪元素（隔墙法的升级版）</h4>
+    <div class="fatherbox clearfix">
+        <div class="box1 fudong">浮动</div>
+        <div class="box2 fudong">浮动</div>
+        <div class="box3 fudong">浮动</div>
+    </div>
+    <h4>方法4 父级添加双伪元素</h4>
+    <div class="fatherbox">
+        <div class="box1 fudong">浮动</div>
+        <div class="box2 fudong">浮动</div>
+        <div class="box3 fudong">浮动</div>
+    </div>
+</body>
+
+</html>

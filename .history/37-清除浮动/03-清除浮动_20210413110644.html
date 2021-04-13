@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动</title>
+    <style>
+        .fatherbox {
+            border: 3px solid blue;
+            margin: 10px auto;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 120px;
+            background-color: red;
+        }
+
+        .box3 {
+            width: 230px;
+            height: 140px;
+            background-color: greenyellow;
+        }
+
+        .fudong {
+            float: left;
+        }
+
+        /* 清除浮动 */
+        .clear {
+            clear: both;
+        }
+
+        .overflow {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info fatherbox">
+        <img src="../imgs/清除浮动.png" alt="">
+        <p style="color: red;">清除浮动的策略是：闭合浮动</p>
+        <h4>清除浮动方法</h4>
+        <ol>
+            <li>额外标签法也称为隔墙法，是W3C推荐的做法。</li>
+            <li style="color: red;">父级添加overflow属性</li>
+            <li style="color: red;">父级添加after伪元素</li>
+            <li style="color: red;">父级添加双伪元素</li>
+        </ol>
+    </div>
+
+    <h4>方法1 隔墙法</h4>
+    <div class="fatherbox">
+        <div class="box1 fudong">浮动</div>
+        <div class="box2 fudong">浮动</div>
+        <div class="box3 fudong">浮动</div>
+        <!-- 额外标签用来清除浮动 但要求必须是块级元素，不能是行内元素-->
+        <div class="clear"></div>
+        <!-- <div style="clear: both;"></div> -->
+    </div>
+
+    <h4>方法2 父级添加overflow</h4>
+    <div class="fatherbox overflow">
+        <div class="box1 fudong">浮动</div>
+        <div class="box2 fudong">浮动</div>
+        <div class="box3 fudong">浮动</div>
+        <!-- 额外标签用来清除浮动 -->
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>

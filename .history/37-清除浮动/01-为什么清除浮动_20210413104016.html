@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>为什么清除浮动</title>
+    <style>
+        .fatherbox {
+            border: 3px solid blue;
+            margin: 0 auto;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 120px;
+            background-color: red;
+        }
+
+        .box3 {
+            width: 230px;
+            height: 140px;
+            background-color: greenyellow;
+        }
+
+        .fudong {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>不加浮动，自动撑开父盒子</h4>
+    <div class="fatherbox">
+        <div class="box1">标准</div>
+        <div class="box2">标准</div>
+        <div class="box3">标准</div>
+    </div>
+    <h4>增加浮动后</h4>
+    <div class="fatherbox">
+        <div class="box1 fudong">浮动</div>
+        <div class="box2 fudong">浮动</div>
+        <div class="box3 fudong">浮动</div>
+    </div>
+
+</body>
+
+</html>

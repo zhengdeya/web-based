@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动布局注意点</title>
+    <style>
+        .exp {
+            height: 300px;
+            background-color: skyblue;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 150px;
+            background-color: red;
+        }
+
+        .box3 {
+            width: 300px;
+            height: 240px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <h4>1、浮动和标准流的父盒子搭配</h4>
+        <p style="color: red;">先用标准流的父元素排列上下位置，之后内部子元素采取浮动排列左右位置</p>
+        <h4>2、一个元素浮动了，理论上其余的兄弟元素也要浮动</h4>
+        <p style="color: red;">浮动的盒子只会影响浮动盒子后面的标准流，不会影响前面的标准流</p>
+    </div>
+    <div class="exps">
+        <div class="exp">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+</body>
+
+</html>
