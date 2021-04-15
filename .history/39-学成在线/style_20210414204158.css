@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header,
+.box,
+.footer {
+    width: 1200px;
+}
+
+.header {
+    height: 42px;
+}
+
+.box {
+    height: 500px;
+}
+
+.footer {
+    height: 42px;
+}

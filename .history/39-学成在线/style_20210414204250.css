@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header,
+.box,
+.footer {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: gray;
+
+}
+
+.header {
+    height: 42px;
+}
+
+.box {
+    height: 500px;
+}
+
+.footer {
+    height: 42px;
+}

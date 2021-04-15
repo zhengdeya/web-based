@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header,
+.box,
+.footer {
+    margin: 0 auto;
+    width: 1200px;
+    background-color: gray;
+
+}
+
+.header {
+    margin: 30px auto;
+    height: 42px;
+}
+
+.header .logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+    /* background-color: pink; */
+}
+
+.header .nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.box {
+    height: 500px;
+}
+
+.footer {
+    height: 42px;
+}
