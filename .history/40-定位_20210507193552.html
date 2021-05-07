@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位</title>
+    <style>
+        .tablestyle {
+            width: 500px;
+        }
+
+        .tablestyle,
+        tr,
+        th,
+        td {
+            border: solid 1px black;
+            text-align: center;
+            /* 合并相邻边框 */
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>一、为什么学习定位</h4>
+    <p>1、某个元素可以自由的在一个盒子内移动位置，并且压住其他盒子</p>
+    <p>2、当我们滚动窗口的时候，盒子是固定屏幕某个位置的</p>
+    <p>以上效果，标准流和浮动都无法快速实现，此时需要定位来实现</p>
+
+    <h4>二、定位组成</h4>
+    <p><span style="color: red;">定位</span> ：将盒子定在某一个位置，所以<span style="color: red;">定位也是在摆放盒子，按照定位的方式移动盒子。</span></p>
+    <p>定位 = 定位模式 + 边偏移</p>
+    <h4>1、定位模式</h4>
+    <p>定位模式决定元素的定位方式，它通过CSS的position属性来设置，其值可以分为四个：</p>
+    <table class="tablestyle">
+        <thead>
+            <tr>
+                <th>值</th>
+                <th>语义</th>
+            </tr>
+
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>static</td>
+                <td>静态定位</td>
+            </tr>
+            <tr>
+                <td>relative</td>
+                <td>相对定位</td>
+            </tr>
+            <tr>
+                <td>absolute</td>
+                <td>绝对定位</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>固定定位</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>定位模式用于指定一个元素在文档中的定位方式，边偏移则决定了元素的最终位置</p>
+    <h4>2、边偏移</h4>
+    <p>边偏移就是定位的盒子移动到最终位置。有top、bottom、left和right 4个属性。</p>
+    <table class="tablestyle">
+        <thead>
+            <tr>
+                <th>边偏移属性</th>
+                <th>示例</th>
+                <th>描述</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>top</td>
+                <td>top: 80px</td>
+                <td>顶端偏移量，定义元素相对于其父元素上边线的距离。</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
